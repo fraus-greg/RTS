@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Reggae+One&display=swap"
+         rel="stylesheet"
+      />
+      <link rel="stylesheet" href="./assets/css/style.css" />
+      <title>Homework</title>
+   </head>
+   <body>
+      <header>
+         <h1>FATUMBA</h1>
+         <div class="header__links">
+            <a href="#" class="header__links-a">Главная</a>
+            <a href="#" class="header__links-a">О компании</a>
+            <a href="#" class="header__links-a">Проекты</a>
+            <a href="#" class="header__links-a">Контакты</a>
+         </div>
+      </header>
+      <main>
+         <section class="welcome">
+            <h1>Добро пожаловать, друг!</h1>
+            <div class="welcome-text">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
+               error, recusandae iusto earum excepturi eos doloremque itaque vel
+               vero sint beatae deleniti tempora sequi ad delectus adipisci
+               perspiciatis ipsa ratione.
+            </div>
+         </section>
+         <section class="about">
+            <h1>О нас</h1>
+            <div class="about-text">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
+               error, recusandae iusto earum excepturi eos doloremque itaque vel
+               vero sint beatae deleniti tempora sequi ad delectus adipisci
+               perspiciatis ipsa ratione.
+            </div>
+         </section>
+         <section class="skills">
+            <div class="skills__content">
+               <h1>Мои навыки</h1>
+               <div class="skills__content__list">
+                  <div class="skills__content__list-box">
+                     <div class="skills__content__list__box-title">Html</div>
+                     <progress max="100" value="70" />
+                  </div>
+                  <div class="skills__content__list-box">
+                     <div class="skills__content__list__box-title">Css</div>
+                     <progress max="100" value="50" />
+                  </div>
+                  <div class="skills__content__list-box">
+                     <div class="skills__content__list__box-title">JS</div>
+                     <progress max="100" value="1" />
+                  </div>
+                  <div class="skills__content__list-box">
+                     <div class="skills__content__list__box-title">
+                        Softskills
+                     </div>
+                     <progress max="100" value="40" />
+                  </div>
+                  <div class="skills__content__list-box">
+                     <div class="skills__content__list__box-title">Windows</div>
+                     <progress max="100" value="100" />
+                  </div>
+                  <div class="skills__content__list-box">
+                     <div class="skills__content__list__box-title">MacOS</div>
+                     <progress max="100" value="0" />
+                  </div>
+               </div>
+            </div>
+            <img src="./assets/img/myphoto.png" alt="" />
+         </section>
+         <section class="projects">
+            <h1>Trailer</h1>
+            <iframe
+               width="560"
+               height="315"
+               src="https://www.youtube.com/embed/70d9irlxiB4"
+               title="YouTube video player"
+               frameborder="0"
+               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+               allowfullscreen
+            ></iframe>
+            <h1>Gameplay</h1>
+            <iframe
+               width="560"
+               height="315"
+               src="https://www.youtube.com/embed/Cvv-SQg6wbM"
+               title="YouTube video player"
+               frameborder="0"
+               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+               allowfullscreen
+            ></iframe>
+         </section>
+         <section class="form">
+            <div class="form__text">
+               <h1>Хотите веб-сайт?</h1>
+               <div class="form__text-title">
+                  Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                  вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для
+                  текстов на латинице с начала XVI века.
+               </div>
+            </div>
+            <div class="form__input">
+               <div class="form__input__list">
+                  <div class="form__input__list__block">
+                     <input
+                        id="input-name"
+                        placeholder="Ваше имя"
+                        type="text"
+                        onfocus="placeholderAnulator(1)"
+                        onblur="placeholderOnBlur(1)"
+                     />
+                     <input
+                        id="input-email"
+                        placeholder="Ваш e-mail"
+                        type="email"
+                        onfocus="placeholderAnulator(2)"
+                        onblur="placeholderOnBlur(2)"
+                     />
+                  </div>
+                  <textarea
+                     id="input-text"
+                     placeholder="Сообщение"
+                     onfocus="placeholderAnulator(3)"
+                     onblur="placeholderOnBlur(3)"
+                  ></textarea>
+               </div>
+               <button onclick="openWindow()">Отправить</button>
+            </div>
+            <section class="modal-block">
+               <img
+                  src="./assets/img/cross.svg"
+                  alt="cross"
+                  onclick="closeWindow()"
+               />
+               <div class="modal__block-content">
+                  <h1 id="h1-name"></h1>
+                  <h1 id="h1-email"></h1>
+                  <h1 id="h1-text"></h1>
+               </div>
+            </section>
+         </section>
+      </main>
+      <footer>
+         <div class="footer__content">
+            <h1>Иванов Иван</h1>
+            <div class="footer__content-title">
+               (с) 2023. Все права защищены.
+            </div>
+         </div>
+         <div class="footer__links a32">
+            <img src="./assets/img/vk.svg" alt="vk" />
+            <img src="./assets/img/vk.svg" alt="vk" />
+            <img src="./assets/img/vk.svg" alt="vk" />
+         </div>
+      </footer>
+
+      <script src="./assets/scripts/main.js"></script>
+   </body>
+</html>

@@ -1,0 +1,935 @@
+* {
+   padding: 0;
+   margin: 0;
+
+   box-sizing: border-box;
+
+   color: #f0e3ca;
+
+   font-style: normal;
+}
+
+@font-face {
+   font-family: "Impact";
+   src: local("Impact"), url(./../fonts/impact.ttf);
+}
+
+body {
+   background: #1b1a17;
+}
+
+.category-name {
+   color: #ff8303;
+}
+
+/*? Header */
+sfsdfsd
+header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 1.39vw 8.33vw;
+
+   color: #f0e3ca;
+
+   font-family: "Inconsolata";
+}
+
+.header__logo {
+   display: flex;
+
+   font-family: "Impact";
+   font-weight: 400;
+   font-size: 2.22vw;
+}
+
+.header__logo span {
+   display: flex;
+
+   color: #ff8303;
+}
+
+.header__logo span div {
+   color: #ff8303;
+}
+
+.header__links {
+   display: flex;
+   gap: 4.44vw;
+
+   text-decoration: none;
+}
+
+.header__links a {
+   text-transform: capitalize;
+   text-decoration: none;
+
+   color: #f0e3ca;
+
+   transition: all 0.3s;
+
+   font-size: 1.39vw;
+}
+
+#header__link1:hover {
+   color: #ff8303;
+}
+#header__link2:hover {
+   color: #ff8303;
+}
+#header__link3:hover {
+   color: #ff8303;
+}
+#header__link4:hover {
+   color: #ff8303;
+}
+
+/*? Welcome */
+
+.welcome {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 9.51vw;
+   padding: 5.07vw 8.33vw 5vw 7.78vw;
+
+   color: #f0e3ca;
+
+   font-family: "Inconsolata";
+}
+
+.welcome__text {
+   width: 31.25vw;
+}
+
+.welcome__text-name {
+   width: 38.47vw;
+
+   font-weight: 900;
+   font-size: 4.44vw;
+}
+
+.welcome__text-title {
+   font-weight: 700;
+   font-size: 2.78vw;
+}
+
+.welcome__text-text {
+   font-weight: 400;
+   font-size: 1.39vw;
+}
+
+.welcome__photo {
+   position: relative;
+   display: flex;
+   width: 43.75vw;
+   height: 43.19vw;
+   justify-content: center;
+   align-items: center;
+
+   background-image: url(./../img/text.svg);
+   background-repeat: no-repeat;
+   background-size: 100%;
+}
+
+.welcome__photo-layer {
+   position: absolute;
+   width: 25.14vw;
+   height: 25vw;
+   border-radius: 30% 60% 30% 69% / 27% 43% 58% 75%;
+}
+
+.welcome__photo-layer1 {
+   transform: rotate(315deg);
+
+   background: rgba(240, 227, 202, 0.72);
+}
+
+.welcome__photo-layer2 {
+   z-index: 1;
+   transform: rotate(261deg);
+
+   background: rgba(255, 131, 3, 0.72);
+}
+
+.welcome__photo-layer3 {
+   z-index: 2;
+
+   background-image: url(./../img/portret.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: 100%;
+}
+
+/*? About */
+
+.about {
+   display: flex;
+   padding: 5.35vw 13.89vw;
+   justify-content: center;
+   align-items: center;
+   gap: 2.22vw;
+
+   font-family: "Inconsolata";
+   font-weight: 400;
+   font-size: 1.67vw;
+
+   color: #f0e3ca;
+}
+
+.about__logo {
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 6.94vw;
+   height: 6.94vw;
+}
+
+.about__logo-layer {
+   position: absolute;
+   width: 5vw;
+   height: 5vw;
+   border-radius: 30% 60% 30% 69% / 27% 43% 58% 75%;
+}
+
+.about__logo-layer1 {
+   transform: rotate(326deg);
+
+   background: rgba(240, 227, 202, 0.72);
+}
+
+.about__logo-layer2 {
+   z-index: 1;
+   transform: rotate(261deg);
+
+   background: rgba(255, 131, 3, 0.72);
+}
+
+.about-text {
+   width: 62.78vw;
+}
+
+/*? Skills */
+
+.skills {
+   display: flex;
+   margin: 4.44vw 0;
+   width: 100%;
+   gap: 2.22vw;
+   justify-content: center;
+   flex-direction: column;
+}
+
+.skills-name {
+   font-family: "Inconsolata";
+   font-weight: 700;
+   font-size: 2.22vw;
+
+   text-align: center;
+}
+
+.skills__list {
+   display: flex;
+   justify-content: center;
+   gap: 1.11vw;
+}
+
+.skills__list-box {
+   display: flex;
+   width: 13.89vw;
+   height: 20.83vw;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   gap: 1.11vw;
+   border-radius: 10px;
+   cursor: pointer;
+
+   background-color: #21201d;
+}
+
+.box-smallImg {
+   width: 7.85vw;
+   height: 8.89vw;
+}
+
+.box-bigImg {
+   width: 8.89vw;
+   height: 8.89vw;
+}
+
+.skills__list__box-img {
+   transition: all 0.3s;
+   background-repeat: no-repeat;
+   background-position: center;
+
+   background-size: 100%;
+}
+
+.skills__list__box-img1 {
+   background-image: url(./../img/iconHtml.svg);
+}
+
+.skills__list-box1:hover .skills__list__box-img1 {
+   background-image: url(./../img/iconHtmlHover.svg);
+}
+
+.skills__list__box-img2 {
+   background-image: url(./../img/iconCss.svg);
+}
+
+.skills__list-box2:hover .skills__list__box-img2 {
+   background-image: url(./../img/iconCssHover.svg);
+}
+
+.skills__list__box-img3 {
+   background-image: url(./../img/iconJs.svg);
+}
+
+.skills__list-box3:hover .skills__list__box-img3 {
+   background-image: url(./../img/iconJsHover.svg);
+}
+
+.skills__list__box-img4 {
+   background-image: url(./../img/iconScss.svg);
+}
+
+.skills__list-box4:hover .skills__list__box-img4 {
+   background-image: url(./../img/iconScssHover.svg);
+}
+
+.skills__list__box-img5 {
+   background-image: url(./../img/iconGit.svg);
+}
+
+.skills__list-box5:hover .skills__list__box-img5 {
+   background-image: url(./../img/iconGitHover.svg);
+}
+
+.skills__list__box-name {
+   text-align: center;
+   width: 100%;
+
+   font-family: "Arial";
+   font-weight: 400;
+   font-size: 2.22vw;
+
+   color: #ffffff;
+}
+
+/*? Works */
+
+.works {
+   display: flex;
+   margin: 4.44vw 0;
+   width: 100%;
+   justify-content: center;
+   align-items: center;
+   gap: 2.22vw;
+   flex-direction: column;
+}
+
+.works-name {
+   font-weight: 700;
+   font-size: 2.22vw;
+   text-align: center;
+   font-family: "Inconsolata";
+}
+
+.works__list {
+   display: flex;
+   gap: 1.11vw;
+}
+
+.works__list__box {
+   width: 22.22vw;
+   height: 22.22vw;
+   position: relative;
+
+   background-repeat: no-repeat;
+   background-position: 0% 0%;
+   background-size: cover;
+   background-image: url(./../img/portfolioScreenshot.png);
+}
+
+.works__list__box:hover .works__list__box__filter {
+   opacity: 1;
+
+   transition-property: opacity;
+   transition-duration: 0.3s;
+}
+
+.works__list__box__filter {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+
+   font-family: "Inconsolata";
+   font-style: normal;
+   font-weight: 400;
+   font-size: 1.11vw;
+
+   opacity: 0;
+
+   color: #f0e3ca;
+   background-color: rgba(33, 32, 29, 0.98);
+}
+
+.works__list__box__filter-help {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 100%;
+   flex-direction: column;
+   gap: 1.11vw;
+}
+
+.works__list__box__filter-name {
+   font-weight: 700;
+   font-size: 2.22vw;
+}
+
+.works__list__box__filter-subtitle {
+   font-weight: 500;
+}
+
+.works__list__box__filter-text {
+   width: 15.28vw;
+}
+
+.works__list__box__filter-img {
+   width: 13.89vw;
+}
+
+.works__list__box__filter-button {
+   width: 7.64vw;
+   height: 2.78vw;
+
+   border: none;
+   border-radius: 4px;
+
+   font-family: "Inconsolata";
+   font-weight: 500;
+   font-size: 0.97vw;
+
+   background: #32312e;
+   color: #f0e3ca;
+}
+
+/*? Footer */
+
+footer {
+   display: flex;
+   margin: 4.17vw 0;
+   gap: 4.44vw;
+   justify-content: center;
+   align-items: flex-start;
+}
+
+.footer__text {
+   display: flex;
+   flex-direction: column;
+   gap: 1.11vw;
+}
+
+.footer__text-title {
+   width: 14.79vw;
+
+   font-family: "Inconsolata";
+   font-weight: 400;
+   font-size: 1.39vw;
+
+   color: #f0e3ca;
+}
+
+.footer__contact {
+   display: flex;
+   flex-direction: column;
+   gap: 1.11vw;
+}
+
+.footer__contact-title {
+   font-family: "Inconsolata";
+   font-weight: 700;
+   font-size: 2.22vw;
+}
+
+.footer__contact__list {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 3.33vw;
+}
+
+.footer__contact__list-help {
+   display: flex;
+   flex-direction: column;
+   gap: 2.22vw;
+}
+
+.footer__contact__list__box {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   gap: 1.11vw;
+
+   font-family: "Inconsolata";
+   font-weight: 400;
+   font-size: 1.67vw;
+}
+
+.footer__contact__list__box__text {
+   color: #ff8303;
+}
+
+/*? Media */
+
+@media (max-width: 704px) {
+   /*? Header */
+
+   header {
+      flex-direction: column;
+      padding: 2.27vw 12.22vw;
+      gap: 2.27vw;
+   }
+
+   .header__logo {
+      font-size: 4.55vw;
+   }
+
+   .header__links {
+      gap: 9.09vw;
+   }
+
+   .header__links a {
+      font-size: 2.84vw;
+   }
+
+   /*? Welcome */
+
+   .welcome {
+      flex-direction: column;
+      gap: 9.09vw;
+      padding: 18.18vw 5.4vw;
+   }
+
+   .welcome__text {
+      display: flex;
+      gap: 1.28vw;
+      width: 63.64vw;
+      flex-direction: column;
+   }
+
+   .welcome__text-name {
+      width: 63.64vw;
+      font-size: 9.09vw;
+   }
+
+   .welcome__text-title {
+      font-size: 5.68vw;
+   }
+
+   .welcome__text-text {
+      font-size: 2.84vw;
+   }
+
+   .welcome__photo {
+      width: 89.35vw;
+      height: 81.68vw;
+   }
+
+   .welcome__photo-layer {
+      width: 53.13vw;
+      height: 52.7vw;
+   }
+
+   /*? About */
+
+   .about {
+      padding: 9.09vw;
+      gap: 4.55vw;
+
+      font-size: 3.41vw;
+   }
+
+   .about__logo {
+      width: 14.2vw;
+      height: 14.2vw;
+   }
+
+   .about__logo-layer {
+      width: 10.23vw;
+      height: 10.23vw;
+   }
+
+   .about-text {
+      width: 63.07vw;
+   }
+
+   /*? Skills */
+
+   .skills {
+      margin: 9.09vw 0;
+      gap: 4.55vw;
+   }
+
+   .skills-name {
+      font-size: 4.55vw;
+   }
+
+   .skills__list {
+      gap: 2.27vw;
+      flex-wrap: wrap;
+   }
+
+   .skills__list-box {
+      width: 28.41vw;
+      height: 42.61vw;
+      gap: 2.27vw;
+   }
+
+   .box-smallImg {
+      width: 16.05vw;
+      height: 18.18vw;
+   }
+
+   .box-bigImg {
+      width: 18.18vw;
+      height: 18.18vw;
+   }
+
+   .skills__list__box-name {
+      font-size: 4.55vw;
+   }
+
+   /*? Works */
+
+   .works {
+      margin: 9.09vw 0;
+      gap: 4.55vw;
+   }
+
+   .works-name {
+      font-size: 4.55vw;
+   }
+
+   .works__list {
+      gap: 2.27vw;
+      flex-direction: column;
+   }
+
+   .works__list__box {
+      width: 45.45vw;
+      height: 45.45vw;
+   }
+
+   .works__list__box__filter {
+      font-size: 2.27vw;
+   }
+
+   .works__list__box__filter-help {
+      gap: 2.27vw;
+   }
+
+   .works__list__box__filter-name {
+      font-size: 4.55vw;
+   }
+
+   .works__list__box__filter-text {
+      width: 31.11vw;
+   }
+
+   .works__list__box__filter-img {
+      width: 28.41vw;
+   }
+
+   .works__list__box__filter-button {
+      width: 15.63vw;
+      height: 5.68vw;
+
+      font-size: 1.99vw;
+   }
+
+   /*? Footer */
+
+   footer {
+      margin: 9.09vw 8.52vw;
+      gap: 9.09vw;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .footer__text {
+      gap: 2.27vw;
+      align-items: center;
+   }
+
+   .footer__text-logo {
+      display: flex;
+   }
+
+   .footer__text-title {
+      width: 56.82vw;
+
+      font-size: 2.84vw;
+   }
+
+   .footer__contact {
+      gap: 2.27vw;
+   }
+
+   .footer__contact-title {
+      font-size: 4.55vw;
+      text-align: center;
+   }
+
+   .footer__contact-title span {
+      text-transform: capitalize;
+   }
+
+   .footer__contact__list {
+      gap: 6.82vw;
+   }
+
+   .footer__contact__list-help {
+      gap: 4.55vw;
+   }
+
+   .footer__contact__list__box {
+      gap: 2.27vw;
+
+      font-size: 3.41vw;
+   }
+
+   .footer__contact__list__box img {
+      width: 4.55vw;
+   }
+}
+
+@media (max-width: 450px) {
+   /*? Header */
+
+   header {
+      padding: 3.56vw 1.78vw;
+      gap: 45.78vw;
+   }
+
+   .header__logo {
+      width: 40vw;
+      justify-content: center;
+
+      font-size: 7.11vw;
+   }
+
+   .header__links {
+      display: none;
+   }
+
+   .header__links a {
+      font-size: 2.84vw;
+   }
+
+   /*? Welcome */
+
+   .welcome {
+      flex-direction: column;
+      gap: 14.22vw;
+      padding: 31.56vw 15.11vw;
+   }
+
+   .welcome__text {
+      display: flex;
+      gap: 3.56vw;
+      width: 69.78vw;
+      flex-direction: column;
+   }
+
+   .welcome__text-name {
+      width: 69.78vw;
+      font-size: 8.89vw;
+   }
+
+   .welcome__text-title {
+      font-size: 7.11vw;
+   }
+
+   .welcome__text-text {
+      font-size: 5.33vw;
+   }
+
+   .welcome__photo {
+      width: 84.44vw;
+      height: 84.44vw;
+   }
+
+   .welcome__photo-layer {
+      width: 61.78vw;
+      height: 61.33vw;
+   }
+
+   /*? About */
+
+   .about {
+      padding: 14.22vw;
+      gap: 7.11vw;
+      flex-direction: column;
+
+      font-size: 5.33vw;
+   }
+
+   .about__logo {
+      width: 22.22vw;
+      height: 22.22vw;
+   }
+
+   .about__logo-layer {
+      width: 16vw;
+      height: 16vw;
+   }
+
+   .about-text {
+      width: 71.56vw;
+   }
+
+   /*? Skills */
+
+   .skills {
+      margin: 14.22vw 0;
+      gap: 7.11vw;
+   }
+
+   .skills-name {
+      font-size: 7.11vw;
+   }
+
+   .skills__list {
+      gap: 3.56vw;
+      flex-wrap: wrap;
+   }
+
+   .skills__list-box {
+      width: 63.33vw;
+      height: auto;
+      gap: 3.56vw;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 3.11vw 7.11vw;
+   }
+
+   .box-smallImg {
+      width: 6.22vw;
+      height: 7.11vw;
+   }
+
+   .box-bigImg {
+      width: 7.11vw;
+      height: 7.11vw;
+   }
+
+   .skills__list__box-name {
+      font-size: 5.33vw;
+      width: auto;
+   }
+
+   /*? Works */
+
+   .works {
+      margin: 14.22vw 0;
+      gap: 7.11vw;
+   }
+
+   .works-name {
+      font-size: 7.11vw;
+   }
+
+   .works__list {
+      gap: 3.56vw;
+   }
+
+   .works__list__box {
+      width: 71.11vw;
+      height: 71.11vw;
+   }
+
+   .works__list__box__filter-text {
+      font-size: 4vw;
+   }
+
+   .works__list__box__filter-help {
+      gap: 3.56vw;
+   }
+
+   .works__list__box__filter-name {
+      font-size: 7.11vw;
+   }
+
+   .works__list__box__filter-subtitle {
+      font-size: 3.56vw;
+   }
+
+   .works__list__box__filter-text {
+      width: 48.89vw;
+   }
+
+   .works__list__box__filter-img {
+      width: 44.44vw;
+   }
+
+   .works__list__box__filter-button {
+      width: 30.67vw;
+      height: 11.33vw;
+
+      font-size: 4vw;
+   }
+
+   /*? Footer */
+
+   footer {
+      margin: 14.22vw 13.33vw;
+      gap: 14.22vw;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .footer__text {
+      gap: 3.56vw;
+      align-items: center;
+   }
+
+   .footer__text-title {
+      width: auto;
+
+      font-size: 4.44vw;
+   }
+
+   .footer__contact {
+      gap: 3.56vw;
+   }
+
+   .footer__contact-title {
+      font-size: 7.11vw;
+      text-align: center;
+   }
+
+   .footer__contact__list {
+      justify-content: center;
+      gap: 10.67vw;
+   }
+
+   .footer__contact__list-help {
+      width: 61.33vw;
+      gap: 7.11vw;
+   } 
+
+   .footer__contact__list__box {
+      gap: 3.56vw;
+
+      font-size: 5.33vw;
+   }
+
+   .footer__contact__list__box img {
+      width: 7.11vw;
+   }
+}

@@ -1,0 +1,348 @@
+* {
+   padding: 0;
+   margin: 0;
+}
+
+main {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+/*? Header */
+
+header {
+   padding: 30px 0;
+   display: flex;
+   justify-content: center;
+   gap: 400px;
+
+   background-color: #ab274f;
+}
+
+header h1 {
+   font-size: xx-large;
+   font-family: "Reggae One";
+
+   color: antiquewhite;
+}
+
+.header__links {
+   display: flex;
+   gap: 35px;
+   align-items: center;
+}
+
+.header__links-a {
+   text-transform: uppercase;
+   text-decoration: none;
+   font-family: "Philosopher";
+
+   color: antiquewhite;
+}
+
+/*? Welcome */
+
+.welcome {
+   width: 100%;
+   padding: 300px 0;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 20px;
+
+   color: white;
+
+   background: url(./../img/keyboard.jpg);
+}
+
+.welcome h1 {
+   font-family: "Philosopher";
+}
+
+.welcome-text {
+   width: 500px;
+   text-align: center;
+
+   font-family: "Philosopher";
+}
+
+/*? About */
+
+.about {
+   margin: 250px 0;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 20px;
+}
+
+.about h1 {
+   font-family: "Philosopher";
+}
+
+.about-text {
+   width: 500px;
+   text-align: center;
+
+   font-family: "Philosopher";
+}
+
+/*? Skills */
+
+.skills {
+   margin: 102px 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 150px;
+
+   font-family: "Philosopher";
+}
+
+.skills__content {
+   display: flex;
+   flex-direction: column;
+   gap: 50px;
+}
+
+.skills__content h1 {
+   font-weight: 500;
+   font-size: 32px;
+   line-height: 38px;
+
+   color: #000000;
+}
+
+.skills__content__list {
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+}
+
+.skills__content__list-box {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+
+.skills__content__list__box-title {
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 26px;
+
+   color: #727272;
+}
+
+.skills__content__list-box progress {
+   width: 445px;
+   height: 4px;
+
+   background: #c4c4c4;
+}
+
+.skills__content__list-box progress::-webkit-progress-value {
+   background: #ab274f;
+}
+
+.skills img {
+   max-width: 555px;
+
+   border-radius: 3px;
+}
+
+.projects {
+   margin-top: 100px;
+   padding: 100px 0;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 60px;
+
+   background-color: antiquewhite;
+   font-family: "Philosopher";
+   font-size: x-large;
+}
+
+/*? Form */
+
+.form {
+   padding: 100px;
+   display: flex;
+   position: relative;
+   flex-direction: column;
+   align-items: center;
+   gap: 65px;
+}
+
+.form__text {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 50px;
+}
+
+.form__text h1 {
+   text-align: center;
+
+   font-weight: 500;
+   font-size: 32px;
+}
+
+.form__text-title {
+   width: 540px;
+   text-align: center;
+
+   font-weight: 400;
+   font-size: 16px;
+
+   color: #727272;
+}
+
+.form__input {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 50px;
+}
+
+.form__input__list {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 20px;
+}
+
+.form__input__list__block {
+   display: flex;
+   justify-content: center;
+   gap: 30px;
+}
+
+.form__input__list__block input {
+   padding-left: 20px;
+   width: 255px;
+   height: 50px;
+   border: none;
+   outline: none;
+
+   font-weight: 400;
+   font-size: 14px;
+
+   background-color: antiquewhite;
+   color: #5f5d5d;
+}
+
+.form__input__list input::placeholder {
+   font-weight: 400;
+   font-size: 14px;
+
+   color: #5f5d5d;
+}
+
+.form__input__list textarea {
+   padding: 17px 20px;
+   width: 540px;
+   height: 175px;
+   border: none;
+   outline: none;
+   resize: none;
+
+   font-weight: 400;
+   font-size: 14px;
+
+   background-color: antiquewhite;
+   color: #5f5d5d;
+}
+
+.form__input__list textarea::placeholder {
+   font-weight: 400;
+   font-size: 14px;
+
+   color: #5f5d5d;
+}
+
+.form__input button {
+   width: 190px;
+   height: 55px;
+   border: none;
+   cursor: pointer;
+
+   font-weight: 400;
+   font-size: 14px;
+   letter-spacing: 0.15em;
+   text-transform: uppercase;
+
+   background-color: #ab274f;
+   color: antiquewhite;
+}
+
+/*? Modal block */
+
+.modal-block {
+   padding: 10px;
+   display: none;
+   position: absolute;
+   width: 700px;
+   height: 600px;
+   text-align: center;
+   border-radius: 3px;
+
+   color: black;
+   background-color: antiquewhite;
+}
+
+.modal-block img {
+   max-width: 50px;
+   position: absolute;
+   right: 0;
+   top: 0;
+
+   cursor: pointer;
+}
+
+.modal__block-content {
+   display: flex;
+   height: 100%;
+   justify-content: space-around;
+   flex-direction: column;
+}
+
+/*? Footer */
+
+footer {
+   padding: 50px 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 757px;
+
+   background: #ab274f;
+}
+
+.footer__content {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+
+.footer__content h1 {
+   font-weight: 500;
+   font-size: 21px;
+
+   color: antiquewhite;
+}
+
+.footer__content-title {
+   font-weight: 400;
+   font-size: 13px;
+
+   color: antiquewhite;
+}
+
+.footer__links {
+   display: flex;
+   gap: 22px;
+}
