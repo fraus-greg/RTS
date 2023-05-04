@@ -23,7 +23,7 @@ body {
 }
 
 /*? Header */
-sfsdfsd
+
 header {
    display: flex;
    justify-content: space-between;
@@ -51,6 +51,21 @@ header {
 
 .header__logo span div {
    color: #ff8303;
+}
+
+.header__burgerLinks {
+   display: none;
+   gap: 1.33vw;
+   flex-direction: column;
+   align-items: flex-end;
+}
+
+.header__burgerLinks-line {
+   width: 8vw;
+   height: 0.89vw;
+   transition: all 0.3s;
+
+   background-color: #f0e3ca;
 }
 
 .header__links {
@@ -81,6 +96,35 @@ header {
    color: #ff8303;
 }
 #header__link4:hover {
+   color: #ff8303;
+}
+
+
+.header__burgerMenu {
+   z-index: 3;
+   padding: 43.11vw 34vw;
+   display: none;
+   position: absolute;
+   left: -100%;
+   top: calc(15.556vw);
+   width: 100%;
+   gap: 14.22vw;
+   flex-direction: column;
+   text-align: center;
+
+   transition: all 0.3s;
+
+   background-color: #1b1a17;
+}
+
+.header__burgerMenu a {
+   text-transform: capitalize;
+   text-decoration: none;
+
+   font-family: 'Inconsolata';
+   font-weight: 700;
+   font-size: 5.33vw;
+
    color: #ff8303;
 }
 
@@ -713,6 +757,7 @@ footer {
    header {
       padding: 3.56vw 1.78vw;
       gap: 45.78vw;
+      flex-direction: row;
    }
 
    .header__logo {
@@ -722,14 +767,23 @@ footer {
       font-size: 7.11vw;
    }
 
+   .header__burgerLinks {
+      display: flex;
+   }
+
+   
    .header__links {
       display: none;
    }
-
+   
    .header__links a {
       font-size: 2.84vw;
    }
 
+   .header__burgerMenu {
+      display: flex;
+   }
+   
    /*? Welcome */
 
    .welcome {
@@ -921,7 +975,7 @@ footer {
    .footer__contact__list-help {
       width: 61.33vw;
       gap: 7.11vw;
-   } 
+   }
 
    .footer__contact__list__box {
       gap: 3.56vw;
