@@ -3,18 +3,22 @@ function burgerLinks() {
    if (burgerBool == false) {
       burgerBool = true;
       document.querySelector(".burgerLinks-line2").style.opacity = "0";
-      document.querySelector(".burgerLinks-line1").style.transform = "rotate(45deg)";
-      document.querySelector(".burgerLinks-line3").style.transform = "rotate(315deg)";
+      document.querySelector(".burgerLinks-line1").style.transform =
+         "rotate(45deg)";
+      document.querySelector(".burgerLinks-line3").style.transform =
+         "rotate(315deg)";
       document.querySelector(".burgerLinks-line1").style.position = "absolute";
       document.querySelector(".burgerLinks-line3").style.position = "absolute";
-      document.querySelector(".header__burgerLinks").style.position = "relative";
+      document.querySelector(".header__burgerLinks").style.position =
+         "relative";
       document.querySelector(".header__burgerMenu").style.left = "0";
-   }
-   else {
+   } else {
       burgerBool = false;
       document.querySelector(".burgerLinks-line2").style.opacity = "1";
-      document.querySelector(".burgerLinks-line1").style.transform = "rotate(0)";
-      document.querySelector(".burgerLinks-line3").style.transform = "rotate(0)";
+      document.querySelector(".burgerLinks-line1").style.transform =
+         "rotate(0)";
+      document.querySelector(".burgerLinks-line3").style.transform =
+         "rotate(0)";
       document.querySelector(".burgerLinks-line1").style.position = "inherit";
       document.querySelector(".burgerLinks-line3").style.position = "inherit";
       document.querySelector(".header__burgerMenu").style.left = "-100%";
@@ -33,4 +37,3 @@ for (let smoothLink of smoothLinks) {
       });
    });
 }
-

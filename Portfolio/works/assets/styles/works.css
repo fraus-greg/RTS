@@ -1,0 +1,124 @@
+body {
+   display: flex;
+   flex-direction: column;
+   height: 100vh;
+   justify-content: space-between;
+}
+
+/*? AbotSite */
+.aboutSite-help {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 2vw;
+}
+
+.aboutSite {
+   display: flex;
+   width: auto;
+   margin: 4.44vw 1.11vw 0 1.11vw;
+   gap: 2.22vw;
+   align-items: center;
+   justify-content: center;
+
+   font-family:"Inconsolata" ;
+   font-size: 1.67vw;
+   font-weight: 400;
+}
+
+.aboutSite img {
+   width: 43.75vw;
+   
+   border-radius: 10px;
+}
+
+.aboutSite img:hover {
+   box-shadow: #fff 0px 5px 15px;
+   opacity: 0.3;
+
+   transition: all 0.3s;
+}
+
+.aboutSite__content {
+   width: 27.78vw;
+   padding: 1.11vw;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 1.11vw;
+
+   border-radius: 10px;
+
+   background-color: #242320;
+}
+
+.aboutSite__content-name {
+   font-size: 2.22vw;
+   font-weight: 700;
+
+   color: #FF8303;
+}
+
+.aboutSite__content-description {
+   text-align: center;
+}
+
+.aboutSite__content__list {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr 1fr;
+   row-gap: 1.11vw;
+   column-gap: 4.44vw;
+}
+
+.aboutSite__content__list-box {
+   padding: 0.56vw;
+   text-align: center;
+
+   border-radius: 6px;
+
+   color: #1b1a17;
+   background-color: #FF8303;
+}
+
+.aboutSite-help a {
+   display: flex;
+   justify-content: center;
+}
+
+/*? Meaia */
+
+@media(max-width: 704px) {
+   .aboutSite {
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .aboutSite img {
+      width: 85.23vw;
+   }
+
+   .aboutSite__content {
+      width: 85.23vw;
+      gap: 5vw;
+      justify-content: space-between;
+   }
+
+   .aboutSite__content-name {
+      font-size: 6.82vw;
+   }
+
+   .aboutSite__content-description {
+      font-size: 3.41vw;
+   }
+
+   .aboutSite__content__list {
+      row-gap: 2vw;
+      columns: 30vw;
+   }
+
+   .aboutSite__content__list-box {
+      width: 9.23vw;
+      font-size: 3.41vw;
+   }
+}
