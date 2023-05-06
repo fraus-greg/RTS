@@ -12,9 +12,9 @@ header {
    display: flex;
    height: 53.47vw;
    padding: 2.85vw 0 21.32vw 0;
-   gap: 26.39vw;
    flex-direction: column;
    align-items: center;
+   justify-content: space-between;
 
    background-repeat: no-repeat;
    background-size: 100%;
@@ -27,7 +27,6 @@ header img {
 
 .header__content {
    display: flex;
-   gap: 1.25vw;
    flex-direction: column;
 } 
 
