@@ -1,11 +1,12 @@
-body {
-   display: flex;
-   flex-direction: column;
-   height: 100vh;
-   justify-content: space-between;
+/*? Header */
+
+.header__burgerMenu {
+   padding-top: 24vw;
+   padding-bottom: 24vw;
 }
 
 /*? AbotSite */
+
 .aboutSite-help {
    display: flex;
    flex-direction: column;
@@ -84,6 +85,25 @@ body {
 .aboutSite-help a {
    display: flex;
    justify-content: center;
+
+   text-decoration: none;
+}
+
+.aboutSite-button {
+   width: 7.64vw;
+   height: 2.78vw;
+
+
+   cursor: pointer;
+   border: none;
+   border-radius: 4px;
+
+   font-family: "Inconsolata";
+   font-weight: 500;
+   font-size: 0.97vw;
+
+   background: #32312e;
+   color: #f0e3ca;
 }
 
 /*? Meaia */

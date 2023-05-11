@@ -58,6 +58,8 @@ header {
    gap: 1.33vw;
    flex-direction: column;
    align-items: flex-end;
+
+   cursor: pointer;
 }
 
 .header__burgerLinks-line {
@@ -99,7 +101,6 @@ header {
    color: #ff8303;
 }
 
-
 .header__burgerMenu {
    z-index: 3;
    padding: 43.11vw 34vw;
@@ -121,7 +122,7 @@ header {
    text-transform: capitalize;
    text-decoration: none;
 
-   font-family: 'Inconsolata';
+   font-family: "Inconsolata";
    font-weight: 700;
    font-size: 5.33vw;
 
@@ -392,9 +393,20 @@ header {
    position: relative;
 
    background-repeat: no-repeat;
-   background-position: 0% 0%;
+   background-position: top;
    background-size: cover;
-   background-image: url(./../img/portfolioScreenshot.png);
+}
+
+#work__list__box1 {
+   background-image: url(./../img/wdScreenshot.png);
+}
+
+#work__list__box2 {
+   background-image: url(./../img/konstruktScreenshot.png);
+}
+
+#work__list__box3 {
+   background-image: url(./../img/wdScreenshot.png);
 }
 
 .works__list__box:hover .works__list__box__filter {
@@ -450,6 +462,8 @@ header {
 .works__list__box__filter-button {
    width: 7.64vw;
    height: 2.78vw;
+
+   cursor: pointer;
 
    border: none;
    border-radius: 4px;
@@ -770,11 +784,11 @@ footer {
    .header__burgerLinks {
       display: flex;
    }
-   
+
    .header__links {
       display: none;
    }
-   
+
    .header__links a {
       font-size: 2.84vw;
    }
@@ -782,7 +796,7 @@ footer {
    .header__burgerMenu {
       display: flex;
    }
-   
+
    /*? Welcome */
 
    .welcome {

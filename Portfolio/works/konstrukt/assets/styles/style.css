@@ -1,0 +1,140 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+
+   font-style: normal;
+   font-family: "Open Sans";
+
+   color: #48555b;
+}
+
+/*? Header */
+
+header {
+   display: flex;
+   height: 53.47vw;
+   padding: 2.85vw 0 21.32vw 0;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+
+   background-repeat: no-repeat;
+   background-size: 100%;
+   background-image: url(./../img/bg.png);
+}
+
+header img {
+   width: 7.01vw;
+}
+
+.header__content {
+   display: flex;
+   flex-direction: column;
+}
+
+.header__content-title {
+   font-size: 4.17vw;
+   letter-spacing: 0.42vw;
+   line-height: 4.86vw;
+   font-family: "Bebas Neue";
+
+   color: #fff;
+}
+
+.header__content-text {
+   text-align: center;
+   font-size: 1.11vw;
+   line-height: 1.32vw;
+   font-family: "Open Sans";
+
+   color: #fff;
+}
+
+/*? Nav */
+
+nav {
+   padding: 1.74vw 0;
+   display: flex;
+   gap: 31.25vw;
+   justify-content: center;
+   align-items: center;
+}
+
+nav img {
+   width: 5.56vw;
+}
+
+.nav__list {
+   display: flex;
+   gap: 2.99vw;
+}
+
+.nav__list-box a {
+   font-size: 0.83vw;
+   font-family: "Open Sans";
+   font-weight: 600;
+   text-decoration: none;
+}
+
+/*? Main */
+
+main {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 8.19vw;
+}
+
+/*? Story */
+
+.story {
+   margin-top: 4.51vw;
+   display: flex;
+   width: 65.35vw;
+   flex-direction: column;
+   gap: 4.51vw;
+}
+
+.story-name {
+   text-align: center;
+
+   font-weight: 700;
+   font-size: 1.25vw;
+}
+
+.story__content {
+   display: flex;
+   gap: 5.35vw;
+}
+
+.story__content__text__title {
+   font-weight: 700;
+   font-size: 1.39vw;
+}
+
+.story__content__list {
+   display: flex;
+   gap: 1.32vw;
+}
+
+.story__content__list__box {
+   width: 9.72vw;
+   height: 15.56vw;
+}
+
+/*? Capability */
+
+.capability {
+   width: 65.28vw;
+}
+
+.capability__list {
+   display: flex;
+   gap: 1.88vw;
+}
+
+.capability__list__box {
+   width: 20.49vw;
+}
