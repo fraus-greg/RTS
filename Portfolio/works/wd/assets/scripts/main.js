@@ -68,33 +68,55 @@ function placeholderOnBlur(number) {
    }
 }
 
-const smoothLinks = document.querySelectorAll('a[href^="#"]');
-for (let smoothLink of smoothLinks) {
-   smoothLink.addEventListener("click", function (e) {
-      e.preventDefault();
-      const id = smoothLink.getAttribute("href");
-
-      document.querySelector(id).scrollIntoView({
-         behavior: "smooth",
-         block: "start",
-      });
-   });
-}
 
 let number = 0
 
 let timer = setInterval(timer11, 1000)
 
 function timer11() {
-   
    number++
    console.log(number);
    if (number == 10) {
       clearInterval(timer)
       function errorStop () {
-               console.log("Стоп, ошибка");
+         console.log("Стоп, ошибка")
       }
       setTimeout(errorStop, 500)
    }
 }
 
+let burgerBool = false
+
+function burgerAnimation() {
+   if (burgerBool == false){
+      burgerBool = true
+      document.querySelector(".burgerMenu-line1").style.top = "50%"
+      document.querySelector(".burgerMenu-line2").style.opacity = "0"
+      document.querySelector(".burgerMenu-line3").style.top = "50%"
+      setTimeout(rotate135,300)
+
+   }
+   else {
+      burgerBool = false 
+      document.querySelector(".burgerMenu-line1").style.top = "0"
+      document.querySelector(".burgerMenu-line2").style.opacity = "1"
+      document.querySelector(".burgerMenu-line3").style.top = "100%"      
+   }
+}
+
+function rotate135() {
+   document.querySelector(".burgerMenu-line1").style.transform = "rotate(135deg)"
+}
+
+const smoothLinks = document.querySelectorAll('a[href^="#"]')
+for (let smoothLink of smoothLinks) {
+   smoothLink.addEventListener("click", function (e) {
+      e.preventDefault();
+      const id = smoothLink.getAttribute("href")
+
+      document.querySelector(id).scrollIntoView({
+         behavior: "smooth",
+         block: "start",
+      })
+   })
+}

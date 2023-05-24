@@ -115,6 +115,32 @@ nav a:hover {
    color: #0a3f807a;
 }
 
+.burgerMenu {
+   height: 5.78vw;
+   width: 10vw;
+   position: relative;
+}
+
+.burgerMenu-line {
+   position: absolute;
+   width: 10vw;
+   height: 1.25vw;
+   background-color: #34547a;
+   transition: all 0.3s;
+}
+
+.burgerMenu-line1 {
+   top: 0;
+}
+
+.burgerMenu-line2 {
+   top: 50%;
+}
+
+.burgerMenu-line3 {
+   top: 100%;
+}
+
 /*? Main */
 
 main {
@@ -556,7 +582,7 @@ main {
    transition-duration: 0.3s;
 
    opacity: 0;
-   
+
    color: black;
    background-color: white;
 }
@@ -632,6 +658,11 @@ footer {
       align-items: center;
    }
 }
+@media (max-width: 920px) {
+   .skills__content__list-box progress {
+      width: 75vw;
+   }
+}
 
 @media (max-width: 900px) {
    nav {
@@ -643,6 +674,7 @@ footer {
       gap: 30vw;
    }
 }
+
 @media (max-width: 600px) {
    footer {
       gap: 25vw;
@@ -650,6 +682,16 @@ footer {
 }
 
 @media (max-width: 555px) {
+   .gallery {
+      flex-wrap: wrap-reverse;
+   }
+
+   .gallery-img {
+      width: 50%;
+   }
+
+   /*? Footer */
+
    .footer__links {
       display: none;
    }
