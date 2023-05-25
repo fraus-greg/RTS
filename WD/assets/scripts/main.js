@@ -68,6 +68,78 @@ function placeholderOnBlur(number) {
    }
 }
 
+let number = 0;
+
+let timer = setInterval(timer11, 1000);
+
+function timer11() {
+   number++;
+   console.log(number);
+   if (number == 10) {
+      clearInterval(timer);
+      function errorStop() {
+         console.log("Стоп, ошибка");
+      }
+      setTimeout(errorStop, 500);
+   }
+}
+
+let burgerBool = false;
+
+function burgerButtonAnimation() {
+   if (burgerBool == false) {
+      burgerBool = true;
+      document.querySelector(".burgerButton-line1").style.top = "50%";
+      document.querySelector(".burgerButton-line2").style.opacity = "0";
+      document.querySelector(".burgerButton-line3").style.top = "50%";
+      setTimeout(rotateLines, 300);
+      setTimeout(rotate225Line1, 600);
+      burgerMenuAnimation()
+   } else {
+      burgerBool = false;
+      document.querySelector(".burgerButton-line1").style.transform =
+      "rotate(135deg)";
+      setTimeout(disRotateLines, 300) 
+      setTimeout(burgerButtonAnimationClose, 600);
+      burgerMenuAnimationClose()
+   }
+}
+
+function rotateLines() {
+   document.querySelector(".burgerButton-line1").style.transform =
+   "rotate(135deg)";
+   document.querySelector(".burgerButton-line3").style.transform =
+   "rotate(135deg)";
+}
+
+function rotate225Line1() {
+   document.querySelector(".burgerButton-line1").style.transform =
+   "rotate(225deg)";
+}
+
+function burgerButtonAnimationClose() {
+   document.querySelector(".burgerButton-line1").style.top = "0";
+   document.querySelector(".burgerButton-line2").style.opacity = "1";
+   document.querySelector(".burgerButton-line3").style.top = "100%";
+}
+
+function disRotateLines() {
+   document.querySelector(".burgerButton-line1").style.transform =
+   "rotate(0)";
+   document.querySelector(".burgerButton-line3").style.transform =
+   "rotate(0)";
+}
+
+function burgerMenuAnimation() {
+   document.querySelector(".burgerMenu").style.left = "0"
+}
+
+function burgerMenuAnimationClose() {
+   document.querySelector(".burgerMenu").style.left = "100%"
+}
+
+//? Smooth Scrolling
+
 const smoothLinks = document.querySelectorAll('a[href^="#"]');
 for (let smoothLink of smoothLinks) {
    smoothLink.addEventListener("click", function (e) {
@@ -80,21 +152,3 @@ for (let smoothLink of smoothLinks) {
       });
    });
 }
-
-let number = 0
-
-let timer = setInterval(timer11, 1000)
-
-function timer11() {
-   
-   number++
-   console.log(number);
-   if (number == 10) {
-      clearInterval(timer)
-      function errorStop () {
-               console.log("Стоп, ошибка");
-      }
-      setTimeout(errorStop, 500)
-   }
-}
-

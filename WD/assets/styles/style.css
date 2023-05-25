@@ -115,6 +115,58 @@ nav a:hover {
    color: #0a3f807a;
 }
 
+.burgerButton {
+   height: 25px;
+   width: 45px;
+   display: none;
+   position: relative;
+}
+
+.burgerButton-line {
+   position: absolute;
+   width: 45px;
+   height: 6px;
+   background-color: #34547a;
+   transition: all 0.3s;
+}
+
+.burgerButton-line1 {
+   top: 0;
+}
+
+.burgerButton-line2 {
+   top: 50%;
+}
+
+.burgerButton-line3 {
+   top: 100%;
+}
+
+.burgerMenu {
+   top: 173.5px;
+   left: 100%;
+   width: 100%;
+   position: absolute;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   gap: 5vw;
+
+   transition: all 0.9s;
+   
+   box-shadow: 0px 0px 10px 10px #eeeff1;
+   background-color: #eeeff1;
+}
+
+.burgerMenu a {
+   font-size: 16px;
+   line-height: 26px;
+   letter-spacing: 0.1em;
+   text-decoration: none;
+
+   color: #000000;
+}
+
 /*? Main */
 
 main {
@@ -556,7 +608,7 @@ main {
    transition-duration: 0.3s;
 
    opacity: 0;
-   
+
    color: black;
    background-color: white;
 }
@@ -633,6 +685,12 @@ footer {
    }
 }
 
+@media (max-width: 920px) {
+   .skills__content__list-box progress {
+      width: 75vw;
+   }
+}
+
 @media (max-width: 900px) {
    nav {
       display: none;
@@ -643,6 +701,7 @@ footer {
       gap: 30vw;
    }
 }
+
 @media (max-width: 600px) {
    footer {
       gap: 25vw;
@@ -650,13 +709,22 @@ footer {
 }
 
 @media (max-width: 555px) {
+   /*? Gallery */
+
+   .gallery {
+      flex-wrap: wrap-reverse;
+   }
+
+   .gallery-img {
+      width: 50%;
+   }
+
+   /*? Footer */
+
    .footer__links {
       display: none;
    }
 
-   .skills img {
-      max-width: 374px;
-   }
    .form__input__list__block {
       flex-direction: column;
       gap: 20px;
@@ -670,8 +738,38 @@ footer {
    }
 }
 
-@media (max-width: 370px) {
+@media (max-width: 450px) {
+   header {
+      gap: 0;
+      justify-content: space-around;
+   }
+
+   .burgerButton {
+      display: block;
+   }
+
+   /*? Intro */
+
+   .intro img {
+      width: 75%;
+   }
+
+   /*? Skills */
+
    .skills img {
-      max-width: 350px;
+      width: 75%;
+   }
+
+   /*? Work */
+
+   .work iframe {
+      width: 75vw;
+      height: 40vw;
+   }
+
+   /*? Form */
+
+   .form__text-title {
+      width: 75vw;
    }
 }

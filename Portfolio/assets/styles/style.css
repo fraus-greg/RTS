@@ -115,6 +115,7 @@ header {
 
    transition: all 0.3s;
 
+   box-shadow: 0px 0px 10px 10px #1b1a17;
    background-color: #1b1a17;
 }
 
