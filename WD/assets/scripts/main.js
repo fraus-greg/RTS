@@ -120,7 +120,7 @@ function rotate225Line1() {
 function burgerButtonAnimationClose() {
    document.querySelector(".burgerButton-line1").style.top = "0";
    document.querySelector(".burgerButton-line2").style.opacity = "1";
-   document.querySelector(".burgerButton-line3").style.top = "100%";
+   document.querySelector(".burgerButton-line3").style.top = "110%";
 }
 
 function disRotateLines() {

@@ -23,7 +23,7 @@
             <a href="#contacts">КОНТАКТЫ</a>
             <a href="http://portfoliogreg.infinityfreeapp.com">Back</a>
          </nav>
-         <div class="burgerButton" onclick="burgerButtonAnimation()">
+         <div class="burgerButton" ontouchend="burgerButtonAnimation()">
             <div class="burgerButton-line burgerButton-line1"></div>
             <div class="burgerButton-line burgerButton-line2"></div>
             <div class="burgerButton-line burgerButton-line3"></div>
@@ -296,7 +296,7 @@
                      onblur="placeholderOnBlur(3)"
                   ></textarea>
                </div>
-               <button onclick="openWindow()">Отправить</button>
+               <button ontouchend="openWindow()">Отправить</button>
             </div>
          </section>
          <section class="filter-screen"></section>
@@ -304,7 +304,7 @@
             <img
                src="./assets/img/cross.svg"
                alt="cross"
-               onclick="closeWindow()"
+               ontouchend="closeWindow()"
             />
             <div class="modal__block-content">
                <h1 id="h1-name"></h1>
