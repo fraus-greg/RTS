@@ -53,6 +53,14 @@ header {
    color: #ff8303;
 }
 
+.header__burgerLinksHelp {
+   height: 6.67vw;
+   width: 8vw;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
 .header__burgerLinks {
    display: none;
    gap: 1.33vw;
